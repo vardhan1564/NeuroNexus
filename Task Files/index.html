@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Contact Information Form</h1>
+            <p>Please fill out the details below</p>
+        </div>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullName" class="required">Full Name</label>
+                <input type="text" id="fullName" name="fullName" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactNumber" class="required">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" class="form-control"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" class="form-control">
+                    <option value="">Please select</option>
+                    <option value="hr">HR</option>
+                    <option value="sales">Sales</option>
+                    <option value="development">Development</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                        <label for="prefer-not-to-say">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
